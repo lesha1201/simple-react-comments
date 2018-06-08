@@ -15,6 +15,15 @@ const cardStyles = {
   padding: '30px',
 };
 
+const cbStyles = {
+  comment: base => ({
+    ...base,
+    color: 'red',
+  }),
+  btn: base => ({ ...base }),
+  textarea: base => ({ ...base }),
+};
+
 export interface State {
   comments: any;
 }
@@ -33,6 +42,7 @@ class App extends React.Component<{}, State> {
         <h1>React Playground</h1>
         <div style={cardStyles}>
           <CommentsBlock
+            styles={cbStyles}
             comments={this.state.comments}
             signinUrl={'/signin'}
             isLoggedIn

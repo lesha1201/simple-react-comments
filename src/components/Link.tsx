@@ -4,21 +4,32 @@ import { Link as RouterLink } from 'react-router-dom';
 export interface Props {
   href: string;
   reactRouter?: boolean;
+  className?: string;
 }
 
 const Link: React.StatelessComponent<Props> = ({
   reactRouter,
   href,
   children,
+  className,
 }) => {
   if (reactRouter) {
-    return <RouterLink to={href}>{children}</RouterLink>;
+    return (
+      <RouterLink className={className} to={href}>
+        {children}
+      </RouterLink>
+    );
   } else {
-    return <a href={href}>{children}</a>;
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
   }
 };
 
 Link.defaultProps = {
+  className: '',
   reactRouter: false,
 };
 

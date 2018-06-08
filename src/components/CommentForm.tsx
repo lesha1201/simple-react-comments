@@ -1,4 +1,8 @@
+import { css } from 'emotion';
 import * as React from 'react';
+import { CssBtn } from '../styles/Btn.css';
+import { CssTextarea } from '../styles/Textarea.css';
+import { CBContext } from './CommentsBlock';
 
 export interface Props {
   onSubmit(text: string): void;
@@ -19,20 +23,24 @@ class CommentForm extends React.Component<Props, State> {
   public render() {
     const { text } = this.state;
     return (
-      <form
-        className="rc-comment-form rc-comments-block__form"
-        onSubmit={this.onSubmit}
-      >
-        <textarea
-          className="rc-comment-form__textarea"
-          name="comment-text"
-          id="comment-text"
-          placeholder="Leave a comment"
-          value={text}
-          onChange={this.onChange}
-        />
-        <button className="rc-btn rc-btn--blue">Comment</button>
-      </form>
+      <CBContext.Consumer>
+        {styles => {
+          const btnCn = css(styles.btn(CssBtn));
+          return (
+            <form onSubmit={this.onSubmit}>
+              <textarea
+                className={css(styles.textarea(CssTextarea))}
+                name="comment-text"
+                id="comment-text"
+                placeholder="Leave a comment"
+                value={text}
+                onChange={this.onChange}
+              />
+              <button className={`${btnCn} ${btnCn}--blue`}>Comment</button>
+            </form>
+          );
+        }}
+      </CBContext.Consumer>
     );
   }
 

@@ -10,3 +10,9 @@ export interface CommentSignInEntity {
   reactRouter: boolean;
   href: string;
 }
+
+export interface StylesEntity {
+  btn(base: CSSStyleDeclaration): CSSStyleDeclaration;
+  comment(base: CSSStyleDeclaration): CSSStyleDeclaration;
+  textarea(base: CSSStyleDeclaration): CSSStyleDeclaration;
+}

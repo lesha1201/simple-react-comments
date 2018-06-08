@@ -21,7 +21,7 @@ const CommentsList: React.StatelessComponent<Props> = ({
     ));
   }
 
-  return <div className="rc-comments-block__list">{renderComments()}</div>;
+  return <div>{renderComments()}</div>;
 };
 
 export default CommentsList;

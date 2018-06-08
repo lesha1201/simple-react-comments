@@ -1,26 +1,34 @@
+import { css } from 'emotion';
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import { CommentSignInEntity } from '../models';
+import { CssBtn } from '../styles/Btn.css';
+import { CBContext } from './CommentsBlock';
+import Link from './Link';
 
 const CommentSignIn: React.StatelessComponent<CommentSignInEntity> = ({
   href,
   reactRouter,
 }) => {
   return (
-    <React.Fragment>
-      <div style={{ marginBottom: '10px' }}>
-        You should be signed in to write a comment.
-      </div>
-      {reactRouter ? (
-        <Link to={href} className="rc-btn rc-btn--blue">
-          Sign In
-        </Link>
-      ) : (
-        <a href={href} className="rc-btn rc-btn--blue">
-          Sign In
-        </a>
-      )}
-    </React.Fragment>
+    <CBContext.Consumer>
+      {styles => {
+        const btnCn = css(styles.btn(CssBtn));
+        return (
+          <React.Fragment>
+            <div style={{ marginBottom: '10px', fontSize: '1.15em' }}>
+              You should be signed in to write a comment.
+            </div>
+            <Link
+              href={href}
+              reactRouter={reactRouter}
+              className={`${btnCn} ${btnCn}--blue`}
+            >
+              Sign In
+            </Link>
+          </React.Fragment>
+        );
+      }}
+    </CBContext.Consumer>
   );
 };
 
