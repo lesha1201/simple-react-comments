@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots 1`] = `
+<div
+  className="rc-comments-block"
+>
+  <div
+    className="rc-comments-block__list"
+  >
+    <div
+      className="rc-comment"
+    >
+      <a
+        href="#"
+      >
+        <div
+          className="rc-comment__avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
+            }
+          }
+        />
+      </a>
+      <div
+        className="rc-comment__col-right"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="rc-comment__name"
+          >
+            Alexey Ryabov
+          </div>
+        </a>
+        <div
+          className="rc-comment__time"
+        >
+          2018-6-2
+        </div>
+        <div
+          className="rc-comment__content"
+        >
+          &lt;h1&gt;hello whats up&lt;/h1&gt;
+        </div>
+      </div>
+    </div>
+    <div
+      className="rc-comment"
+    >
+      <a
+        href="/asdf"
+      >
+        <div
+          className="rc-comment__avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
+            }
+          }
+        />
+      </a>
+      <div
+        className="rc-comment__col-right"
+      >
+        <a
+          href="/asdf"
+        >
+          <div
+            className="rc-comment__name"
+          >
+            Alexey Ryabov
+          </div>
+        </a>
+        <div
+          className="rc-comment__time"
+        >
+          2018-6-2
+        </div>
+        <div
+          className="rc-comment__content"
+        >
+          reactomments is awesome!
+        </div>
+      </div>
+    </div>
+  </div>
+  <form
+    className="rc-comment-form comments-block__form"
+    onSubmit={[Function]}
+  >
+    <textarea
+      className="rc-comment-form__textarea"
+      id="comment-text"
+      name="comment-text"
+      onChange={[Function]}
+      placeholder="Leave a comment"
+      value=""
+    />
+    <button
+      className="rc-btn rc-btn--blue"
+    >
+      Comment
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Snapshots 2`] = `
+<div
+  className="rc-comments-block"
+>
+  <div
+    className="rc-comments-block__list"
+  >
+    <div
+      className="rc-comment"
+    >
+      <a
+        href="#"
+      >
+        <div
+          className="rc-comment__avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
+            }
+          }
+        />
+      </a>
+      <div
+        className="rc-comment__col-right"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="rc-comment__name"
+          >
+            Alexey Ryabov
+          </div>
+        </a>
+        <div
+          className="rc-comment__time"
+        >
+          2018-6-2
+        </div>
+        <div
+          className="rc-comment__content"
+        >
+          &lt;h1&gt;hello whats up&lt;/h1&gt;
+        </div>
+      </div>
+    </div>
+    <div
+      className="rc-comment"
+    >
+      <a
+        href="/asdf"
+      >
+        <div
+          className="rc-comment__avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
+            }
+          }
+        />
+      </a>
+      <div
+        className="rc-comment__col-right"
+      >
+        <a
+          href="/asdf"
+        >
+          <div
+            className="rc-comment__name"
+          >
+            Alexey Ryabov
+          </div>
+        </a>
+        <div
+          className="rc-comment__time"
+        >
+          2018-6-2
+        </div>
+        <div
+          className="rc-comment__content"
+        >
+          reactomments is awesome!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "marginBottom": "10px",
+      }
+    }
+  >
+    You should be signed in to write a comment.
+  </div>
+  <a
+    className="rc-btn rc-btn--blue"
+    href="/signin"
+  >
+    Sign In
+  </a>
+</div>
+`;

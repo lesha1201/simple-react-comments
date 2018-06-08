@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot for Comment 1`] = `
+<div
+  className="rc-comment"
+>
+  <a
+    href="#"
+  >
+    <div
+      className="rc-comment__avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
+        }
+      }
+    />
+  </a>
+  <div
+    className="rc-comment__col-right"
+  >
+    <a
+      href="#"
+    >
+      <div
+        className="rc-comment__name"
+      >
+        Alexey Ryabov
+      </div>
+    </a>
+    <div
+      className="rc-comment__time"
+    >
+      2018-6-2
+    </div>
+    <div
+      className="rc-comment__content"
+    >
+      &lt;h1&gt;hello whats up&lt;/h1&gt;
+    </div>
+  </div>
+</div>
+`;
