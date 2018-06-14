@@ -1,7 +1,7 @@
 {
-  "name": "blog-client",
+  "name": "reactomments",
   "version": "1.0.0",
-  "description": "",
+  "description": "A comment module for React built with React and Typescript.",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
@@ -10,10 +10,11 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "author": "Alexey Ryabov",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^22.2.3",

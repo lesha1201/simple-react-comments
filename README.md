@@ -158,6 +158,9 @@ CommentEntity = {
   // Reset styles of textarea and use new styles
   textarea: () => ({
     border: none,
+    '&::placeholder': {
+      color: 'blue'
+    },
   }),
 }
 ```

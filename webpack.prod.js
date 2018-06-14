@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
-  entry: 'src/index.tsx',
+  entry: './src/index.tsx',
   devtool: 'cheap-module-source-map',
   optimization: {
     minimizer: [
