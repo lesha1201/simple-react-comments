@@ -17,8 +17,7 @@ const Comment: React.StatelessComponent<Props> = ({ comment, reactRouter }) => {
     <CBContext.Consumer>
       {styles => {
         const cn = css(styles.comment(CssComment));
-        // console.log(styles.comment(CssComment));
-        // console.log(CssComment);
+
         return (
           <div className={cn}>
             <Link reactRouter={reactRouter} href={authorUrl}>

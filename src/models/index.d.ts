@@ -1,3 +1,5 @@
+import { CSSObject } from 'create-emotion';
+
 export interface CommentEntity {
   avatarUrl: string;
   authorUrl: string;
@@ -12,7 +14,7 @@ export interface CommentSignInEntity {
 }
 
 export interface StylesEntity {
-  btn(base: CSSStyleDeclaration): CSSStyleDeclaration;
-  comment(base: CSSStyleDeclaration): CSSStyleDeclaration;
-  textarea(base: CSSStyleDeclaration): CSSStyleDeclaration;
+  btn?(base: any): any;
+  comment?(base: any): any;
+  textarea?(base: any): any;
 }

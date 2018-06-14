@@ -2,13 +2,14 @@
 
 exports[`snapshot for Comment 1`] = `
 <div
-  className="rc-comment"
+  className="css-0"
 >
   <a
+    className=""
     href="#"
   >
     <div
-      className="rc-comment__avatar"
+      className="css-0__avatar"
       style={
         Object {
           "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
@@ -17,24 +18,25 @@ exports[`snapshot for Comment 1`] = `
     />
   </a>
   <div
-    className="rc-comment__col-right"
+    className="css-0__col-right"
   >
     <a
+      className=""
       href="#"
     >
       <div
-        className="rc-comment__name"
+        className="css-0__name"
       >
         Alexey Ryabov
       </div>
     </a>
     <div
-      className="rc-comment__time"
+      className="css-0__time"
     >
-      2018-6-2
+      2018-6-14
     </div>
     <div
-      className="rc-comment__content"
+      className="css-0__content"
     >
       &lt;h1&gt;hello whats up&lt;/h1&gt;
     </div>

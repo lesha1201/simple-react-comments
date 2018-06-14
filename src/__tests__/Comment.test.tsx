@@ -10,4 +10,5 @@ it('snapshot for Comment', () => {
   const tree = component.toJSON();
 
   expect(tree).toMatchSnapshot();
+  component.unmount();
 });

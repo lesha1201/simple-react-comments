@@ -1,8 +1,8 @@
-import { render, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { commentsData } from '../../preview/data';
-import CommentForm from '../components/CommentForm';
+import Comment from '../components/Comment';
 import CommentsBlock from '../components/CommentsBlock';
 
 test('Snapshots', () => {
@@ -18,6 +18,7 @@ test('Snapshots', () => {
   );
   let tree = componentLoggedIn.toJSON();
   expect(tree).toMatchSnapshot();
+  componentLoggedIn.unmount();
 
   const componentNotLoggedIn = renderer.create(
     <CommentsBlock
@@ -30,11 +31,12 @@ test('Snapshots', () => {
   );
   tree = componentNotLoggedIn.toJSON();
   expect(tree).toMatchSnapshot();
+  componentNotLoggedIn.unmount();
 });
 
 it('should call onSubmit prop with text of form when submitting it', () => {
   const onSubmitMock = jest.fn();
-  const commentsBlock = shallow(
+  const commentsBlock = mount(
     <CommentsBlock
       comments={commentsData}
       signinUrl="/signin"
@@ -45,10 +47,38 @@ it('should call onSubmit prop with text of form when submitting it', () => {
   );
   const preventDefault = jest.fn();
   const value = 'test value';
-  const commentForm = commentsBlock.find(CommentForm).dive();
 
-  commentForm.find('textarea').simulate('change', { target: { value } });
-  commentForm.find('form').simulate('submit', { preventDefault });
+  commentsBlock.find('textarea').simulate('change', { target: { value } });
+  commentsBlock.find('form').simulate('submit', { preventDefault });
 
   expect(onSubmitMock).toBeCalledWith(value);
+  commentsBlock.unmount();
+});
+
+it('should change color of comment text', () => {
+  const onSubmitMock = jest.fn();
+  const customStyles = {
+    comment: base => ({
+      ...base,
+      color: 'red',
+    }),
+  };
+  const commentsBlock = mount(
+    <CommentsBlock
+      styles={customStyles}
+      comments={commentsData}
+      signinUrl="/signin"
+      isLoggedIn
+      reactRouter={false}
+      onSubmit={onSubmitMock}
+    />,
+  );
+
+  const comments = commentsBlock.find(Comment);
+
+  comments.map(comment => {
+    const styles = getComputedStyle(comment.getDOMNode());
+    expect(styles.color).toBe('red');
+  });
+  commentsBlock.unmount();
 });

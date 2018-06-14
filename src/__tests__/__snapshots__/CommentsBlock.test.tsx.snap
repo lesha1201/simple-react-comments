@@ -1,20 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshots 1`] = `
-<div
-  className="rc-comments-block"
->
-  <div
-    className="rc-comments-block__list"
-  >
+<div>
+  <div>
     <div
-      className="rc-comment"
+      className="css-0"
     >
       <a
+        className=""
         href="#"
       >
         <div
-          className="rc-comment__avatar"
+          className="css-0__avatar"
           style={
             Object {
               "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
@@ -23,37 +20,39 @@ exports[`Snapshots 1`] = `
         />
       </a>
       <div
-        className="rc-comment__col-right"
+        className="css-0__col-right"
       >
         <a
+          className=""
           href="#"
         >
           <div
-            className="rc-comment__name"
+            className="css-0__name"
           >
             Alexey Ryabov
           </div>
         </a>
         <div
-          className="rc-comment__time"
+          className="css-0__time"
         >
-          2018-6-2
+          2018-6-14
         </div>
         <div
-          className="rc-comment__content"
+          className="css-0__content"
         >
           &lt;h1&gt;hello whats up&lt;/h1&gt;
         </div>
       </div>
     </div>
     <div
-      className="rc-comment"
+      className="css-0"
     >
       <a
+        className=""
         href="/asdf"
       >
         <div
-          className="rc-comment__avatar"
+          className="css-0__avatar"
           style={
             Object {
               "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
@@ -62,24 +61,25 @@ exports[`Snapshots 1`] = `
         />
       </a>
       <div
-        className="rc-comment__col-right"
+        className="css-0__col-right"
       >
         <a
+          className=""
           href="/asdf"
         >
           <div
-            className="rc-comment__name"
+            className="css-0__name"
           >
             Alexey Ryabov
           </div>
         </a>
         <div
-          className="rc-comment__time"
+          className="css-0__time"
         >
-          2018-6-2
+          2018-6-14
         </div>
         <div
-          className="rc-comment__content"
+          className="css-0__content"
         >
           reactomments is awesome!
         </div>
@@ -87,11 +87,10 @@ exports[`Snapshots 1`] = `
     </div>
   </div>
   <form
-    className="rc-comment-form comments-block__form"
     onSubmit={[Function]}
   >
     <textarea
-      className="rc-comment-form__textarea"
+      className="css-0"
       id="comment-text"
       name="comment-text"
       onChange={[Function]}
@@ -99,7 +98,7 @@ exports[`Snapshots 1`] = `
       value=""
     />
     <button
-      className="rc-btn rc-btn--blue"
+      className="css-0 css-0--blue"
     >
       Comment
     </button>
@@ -108,20 +107,17 @@ exports[`Snapshots 1`] = `
 `;
 
 exports[`Snapshots 2`] = `
-<div
-  className="rc-comments-block"
->
-  <div
-    className="rc-comments-block__list"
-  >
+<div>
+  <div>
     <div
-      className="rc-comment"
+      className="css-0"
     >
       <a
+        className=""
         href="#"
       >
         <div
-          className="rc-comment__avatar"
+          className="css-0__avatar"
           style={
             Object {
               "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
@@ -130,37 +126,39 @@ exports[`Snapshots 2`] = `
         />
       </a>
       <div
-        className="rc-comment__col-right"
+        className="css-0__col-right"
       >
         <a
+          className=""
           href="#"
         >
           <div
-            className="rc-comment__name"
+            className="css-0__name"
           >
             Alexey Ryabov
           </div>
         </a>
         <div
-          className="rc-comment__time"
+          className="css-0__time"
         >
-          2018-6-2
+          2018-6-14
         </div>
         <div
-          className="rc-comment__content"
+          className="css-0__content"
         >
           &lt;h1&gt;hello whats up&lt;/h1&gt;
         </div>
       </div>
     </div>
     <div
-      className="rc-comment"
+      className="css-0"
     >
       <a
+        className=""
         href="/asdf"
       >
         <div
-          className="rc-comment__avatar"
+          className="css-0__avatar"
           style={
             Object {
               "backgroundImage": "url(https://cdnb.artstation.com/p/users/avatars/000/126/159/large/582fd86d44a71299b5cc51fe9f580471.jpg?1447075438)",
@@ -169,24 +167,25 @@ exports[`Snapshots 2`] = `
         />
       </a>
       <div
-        className="rc-comment__col-right"
+        className="css-0__col-right"
       >
         <a
+          className=""
           href="/asdf"
         >
           <div
-            className="rc-comment__name"
+            className="css-0__name"
           >
             Alexey Ryabov
           </div>
         </a>
         <div
-          className="rc-comment__time"
+          className="css-0__time"
         >
-          2018-6-2
+          2018-6-14
         </div>
         <div
-          className="rc-comment__content"
+          className="css-0__content"
         >
           reactomments is awesome!
         </div>
@@ -196,6 +195,7 @@ exports[`Snapshots 2`] = `
   <div
     style={
       Object {
+        "fontSize": "1.15em",
         "marginBottom": "10px",
       }
     }
@@ -203,7 +203,7 @@ exports[`Snapshots 2`] = `
     You should be signed in to write a comment.
   </div>
   <a
-    className="rc-btn rc-btn--blue"
+    className="css-0 css-0--blue"
     href="/signin"
   >
     Sign In

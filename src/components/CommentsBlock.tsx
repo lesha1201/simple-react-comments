@@ -10,7 +10,7 @@ const defaultStyles = {
   textarea: base => ({ ...base }),
 };
 
-export const CBContext = React.createContext(defaultStyles);
+export const CBContext = React.createContext<StylesEntity>(defaultStyles);
 
 export interface Props {
   comments: CommentEntity[];
@@ -21,12 +21,29 @@ export interface Props {
   onSubmit(text: string): void;
 }
 
-class CommentsBlock extends React.Component<Props, {}> {
+export interface State {
+  styles: StylesEntity;
+}
+
+class CommentsBlock extends React.Component<Props, State> {
   public static defaultProps: Partial<Props> = {
     isLoggedIn: false,
     reactRouter: false,
     styles: defaultStyles,
   };
+
+  public static getDerivedStateFromProps(props, state) {
+    return {
+      styles: Object.assign({}, state.styles, props.styles),
+    };
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      styles: defaultStyles,
+    };
+  }
 
   public render() {
     const {
@@ -35,11 +52,10 @@ class CommentsBlock extends React.Component<Props, {}> {
       signinUrl,
       onSubmit,
       reactRouter,
-      styles,
     } = this.props;
 
     return (
-      <CBContext.Provider value={styles}>
+      <CBContext.Provider value={this.state.styles}>
         <div>
           <CommentsList comments={comments} reactRouter={reactRouter} />
           {isLoggedIn ? (

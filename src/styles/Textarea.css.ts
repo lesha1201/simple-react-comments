@@ -7,4 +7,5 @@ export const CssTextarea = {
   borderRadius: '10px',
   outline: 'none',
   marginBottom: '10px',
+  boxSizing: 'border-box',
 };
