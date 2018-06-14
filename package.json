@@ -1,5 +1,5 @@
 {
-  "name": "reactomments",
+  "name": "simple-react-comments",
   "version": "1.0.0",
   "description": "A comment module for React built with React and Typescript.",
   "main": "dist/index.js",

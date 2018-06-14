@@ -1,4 +1,4 @@
-# Reactomments 💬
+# simple-react-comments 💬
 
 A comment module for React built with React and Typescript.
 
@@ -9,20 +9,20 @@ A comment module for React built with React and Typescript.
 #### Yarn
 
 ```
-yarn add reactomments
+yarn add simple-react-comments
 ```
 
 #### Npm
 
 ```
-npm i -S reactomments
+npm i -S simple-react-comments
 ```
 
 ## Usage
 
 ```js
 import * as React from 'react';
-import Reactomments from 'reactomments';
+import CommentsBlock from 'simple-react-comments';
 import { commentsData } from './data/index'; // Some comment data
 
 class App extends React.Component {
