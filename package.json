@@ -1,6 +1,6 @@
 {
   "name": "simple-react-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comment module for React built with React and Typescript.",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
