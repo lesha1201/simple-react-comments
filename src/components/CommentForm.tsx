@@ -36,7 +36,7 @@ class CommentForm extends React.Component<Props, State> {
                 value={text}
                 onChange={this.onChange}
               />
-              <button className={`${btnCn} ${btnCn}--blue`}>Comment</button>
+              <button className={btnCn}>Comment</button>
             </form>
           );
         }}

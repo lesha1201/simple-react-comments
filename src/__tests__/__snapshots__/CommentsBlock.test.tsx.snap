@@ -98,7 +98,7 @@ exports[`Snapshots 1`] = `
       value=""
     />
     <button
-      className="css-0 css-0--blue"
+      className="css-0"
     >
       Comment
     </button>
@@ -203,7 +203,7 @@ exports[`Snapshots 2`] = `
     You should be signed in to write a comment.
   </div>
   <a
-    className="css-0 css-0--blue"
+    className="css-0"
     href="/signin"
   >
     Sign In

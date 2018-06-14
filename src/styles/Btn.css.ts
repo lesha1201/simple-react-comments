@@ -10,12 +10,9 @@ export const CssBtn = {
   "cursor": 'pointer',
   "outline": 'none',
   "transition": 'background 0.2s, color 0.2s',
-
-  '&--blue': {
-    background: '#0088ff',
-    color: '#fff',
-  },
-  '&--blue:hover': {
+  "background": '#0088ff',
+  "color": '#fff',
+  '&:hover': {
     background: '#0c79da',
   },
 };
