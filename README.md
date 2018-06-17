@@ -1,4 +1,4 @@
-# simple-react-comments 💬
+# simple-react-comments 💬 [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/simple-react-comments)
 
 A comment module for React built with React and Typescript.
 
