@@ -79,7 +79,8 @@ class CommentForm extends React.Component<Props, State> {
     if (e) {
       e.preventDefault();
     }
-    this.props.onSubmit(this.state.text);
+    const text = this.state.text.trim().replace(/\n{3,}/g, '\n\n');
+    this.props.onSubmit(text);
     this.setState({ text: '' });
   }
 }

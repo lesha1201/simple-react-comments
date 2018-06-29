@@ -11,7 +11,22 @@ export interface Props {
 }
 
 const Comment: React.StatelessComponent<Props> = ({ comment, reactRouter }) => {
-  const { authorUrl, avatarUrl, text, createdAt, fullName } = comment;
+  const { authorUrl, avatarUrl, createdAt, fullName } = comment;
+  const textHtml = (
+    <React.Fragment>
+      {comment.text.split('\n').map(
+        (chunk, inx) =>
+          inx !== comment.text.length - 1 ? (
+            <React.Fragment key={chunk + inx}>
+              {chunk}
+              <br />
+            </React.Fragment>
+          ) : (
+            chunk
+          ),
+      )}
+    </React.Fragment>
+  );
 
   return (
     <CBContext.Consumer>
@@ -35,7 +50,7 @@ const Comment: React.StatelessComponent<Props> = ({ comment, reactRouter }) => {
               <div className={`${cn}__time`}>
                 {createdAt.toLocaleDateString()}
               </div>
-              <div className={`${cn}__content`}>{text}</div>
+              <div className={`${cn}__content`}>{textHtml}</div>
             </div>
           </div>
         );
