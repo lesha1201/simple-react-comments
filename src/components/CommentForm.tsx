@@ -10,12 +10,14 @@ export interface Props {
 
 export interface State {
   text: string;
+  enterPressed: boolean;
 }
 
 class CommentForm extends React.Component<Props, State> {
   constructor(props) {
     super(props);
     this.state = {
+      enterPressed: false,
       text: '',
     };
   }
@@ -35,6 +37,7 @@ class CommentForm extends React.Component<Props, State> {
                 placeholder="Leave a comment"
                 value={text}
                 onChange={this.onChange}
+                onKeyPress={this.onEnter}
               />
               <button className={btnCn}>Comment</button>
             </form>
@@ -45,13 +48,37 @@ class CommentForm extends React.Component<Props, State> {
   }
 
   private onChange = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
-    this.setState({
-      text: e.target.value,
+    const { value } = e.target;
+    this.setState(state => {
+      if (state.enterPressed) {
+        return { ...state, enterPressed: false };
+      } else {
+        return {
+          ...state,
+          text: value,
+        };
+      }
     });
   }
 
-  private onSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
+  private onEnter = (e: React.KeyboardEvent<HTMLTextAreaElement>): void => {
+    e.stopPropagation();
+    if (e.key === 'Enter' && !e.shiftKey) {
+      this.setState(
+        {
+          enterPressed: true,
+        },
+        () => {
+          this.onSubmit();
+        },
+      );
+    }
+  }
+
+  private onSubmit = (e?: React.FormEvent<HTMLFormElement>): void => {
+    if (e) {
+      e.preventDefault();
+    }
     this.props.onSubmit(this.state.text);
     this.setState({ text: '' });
   }

@@ -30,7 +30,7 @@ class App extends React.Component<{}, State> {
   public render() {
     return (
       <div style={styles}>
-        <h1>React Playground</h1>
+        <h1>react-simple-comments</h1>
         <div style={cardStyles}>
           <CommentsBlock
             comments={this.state.comments}

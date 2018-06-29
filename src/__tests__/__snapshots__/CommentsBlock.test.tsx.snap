@@ -35,7 +35,7 @@ exports[`Snapshots 1`] = `
         <div
           className="css-0__time"
         >
-          2018-6-14
+          2018-6-29
         </div>
         <div
           className="css-0__content"
@@ -76,7 +76,7 @@ exports[`Snapshots 1`] = `
         <div
           className="css-0__time"
         >
-          2018-6-14
+          2018-6-29
         </div>
         <div
           className="css-0__content"
@@ -94,6 +94,7 @@ exports[`Snapshots 1`] = `
       id="comment-text"
       name="comment-text"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="Leave a comment"
       value=""
     />
@@ -141,7 +142,7 @@ exports[`Snapshots 2`] = `
         <div
           className="css-0__time"
         >
-          2018-6-14
+          2018-6-29
         </div>
         <div
           className="css-0__content"
@@ -182,7 +183,7 @@ exports[`Snapshots 2`] = `
         <div
           className="css-0__time"
         >
-          2018-6-14
+          2018-6-29
         </div>
         <div
           className="css-0__content"
