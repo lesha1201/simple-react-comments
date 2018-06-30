@@ -1,4 +1,4 @@
-# simple-react-comments 💬
+# simple-react-comments 💬 [![npm version](https://badge.fury.io/js/simple-react-comments.svg)](https://www.npmjs.com/package/simple-react-comments)
 
 A comment module for React built with React and Typescript.
 
