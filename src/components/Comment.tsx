@@ -15,8 +15,8 @@ const Comment: React.StatelessComponent<Props> = ({ comment, reactRouter }) => {
   const textHtml = (
     <React.Fragment>
       {comment.text.split('\n').map(
-        (chunk, inx) =>
-          inx !== comment.text.length - 1 ? (
+        (chunk, inx, arr) =>
+          inx !== arr.length - 1 ? (
             <React.Fragment key={chunk + inx}>
               {chunk}
               <br />
