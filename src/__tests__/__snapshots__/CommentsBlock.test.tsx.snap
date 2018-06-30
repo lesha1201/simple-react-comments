@@ -81,7 +81,7 @@ exports[`Snapshots 1`] = `
         <div
           className="css-0__content"
         >
-          reactomments is awesome!
+          react-simple-comments is awesome!
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@ exports[`Snapshots 2`] = `
         <div
           className="css-0__content"
         >
-          reactomments is awesome!
+          react-simple-comments is awesome!
         </div>
       </div>
     </div>

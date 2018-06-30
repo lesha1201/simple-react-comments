@@ -2,6 +2,8 @@
 
 A comment module for React built with React and Typescript.
 
+[![preview.jpg](https://s15.postimg.cc/gkladakhn/preview.jpg)](https://postimg.cc/image/oq3cbg8qf/)
+
 # Quick Start
 
 ## Installation
